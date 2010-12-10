@@ -1,7 +1,7 @@
 ---
 title: Blog mit Jekyll
 layout: post
-date: 2010-12-10 10:00:00
+date: 2010-12-10 22:00:00
 categories:
 - blog
 ---
