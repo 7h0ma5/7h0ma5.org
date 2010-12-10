@@ -1,0 +1,19 @@
+auto: false
+server: false
+source: .
+destination: ./_site
+plugins: ./_plugins
+exclude: Rakefile
+
+pygments: true
+permalink: /:year/:month/:title
+lsi: false
+future: false
+markdown: maruku
+
+maruku:
+  use_tex: true
+  use_divs: false
+  png_engine: blahtex
+  png_dir: images/latex
+  png_url: /images/latex
