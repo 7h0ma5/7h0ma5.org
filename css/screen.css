@@ -140,7 +140,7 @@ h1#site-title {
 .post h2 {
   font-size: 2em;
   font-weight: 700;
-  text-shadow: 1px 1px 1px #aaa;
+  text-shadow: 1px 1px 1px #ccc;
 }
 
 .post h2 a {
@@ -237,6 +237,7 @@ h1#site-title {
   display: block;
   margin: 10px 0;
   font-size: 0.9em;
+  color: #666;
 }
 
 .meta .row {
