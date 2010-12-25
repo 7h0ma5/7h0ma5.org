@@ -1,5 +1,5 @@
 ---
-title: mutt mit GMail und imap
+title: Mutt mit Gmail und IMAP
 layout: post
 date: 2010-12-18 15:00:00
 categories:
@@ -7,12 +7,12 @@ categories:
 ---
 
 Google Mail hat zwar ein sehr gutes Webinterface, doch einen
-Text-basierten Client wie [mutt](http://www.mutt.org/)
+Text-basierten Client wie [Mutt](http://www.mutt.org/)
 zu benutzen hat auch einige Vorteile. Zum Beispiel unterstützt
 mutt GnuPG vollständig und über eine SSH-Verbindnung kann man
 von überall aus sicher auf seine E-Mails zugreifen.
 
-Damit mutt richtig mit GMail zusammenarbeitet, muss
+Damit Mutt richtig mit Gmail zusammenarbeitet, muss
 man einige Einstellungen in der *.muttrc* vornehmen:
 
 ### Account-Daten
@@ -53,7 +53,7 @@ Shortcuts, die auch im Webinterface funktionieren:
 
 ### Sonstiges
 
-Damit mutt richtig mit GMail zusammenarbeitet,
+Damit mutt richtig mit Gmail zusammenarbeitet,
 habe ich noch folgende Einstellungen gesetzt:
 
     set imap_keepalive = 900

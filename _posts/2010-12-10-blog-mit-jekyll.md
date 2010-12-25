@@ -31,7 +31,9 @@ Beispiel [Disqus](http://www.disqus.com) für die Kommentare.
 Da Jekyll auf Ruby basiert, ist die Installation sehr einfach,
 soweit man Ruby und RubyGems bereits installiert hat.
 
-    gem install jekyll
+{% highlight bash %}
+$ gem install jekyll
+{% endhighlight %}
 
 ### Konfiguration
 Ein Blog mit Jekyll ist einfach nur ein Verzeichnis mit dieser
@@ -77,16 +79,18 @@ mit dem eigentlichen Inhalt gefüllt wird.
 
 Ein Template sieht zum Beispiel so aus:
 
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>{{"{{page.title"}}}}</title>
-      </head>
-      <body>
-        <h1>{{"{{page.title"}}}}</h1>
-        {{"{{content"}}}}
-      </body>
-    </html>
+{% highlight html+django %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{"{{page.title"}}}}</title>
+  </head>
+  <body>
+    <h1>{{"{{page.title"}}}}</h1>
+      {{"{{content"}}}}
+    </body>
+</html>
+{% endhighlight %}
 
 ### Deployment
 Um den Mix aus Templates und Markdown in eine statische HTML-Seite
@@ -97,7 +101,9 @@ Webserver hochgeladen werden, wofür es mehrere Möglichkeiten gibt.
 
 Eine Möglichkeit ist rsync:
 
-    jekyll && rsync -avz --delete _site/ user@host:/var/www/my_site
+{% highlight bash %}
+$ jekyll && rsync -avz --delete _site/ user@host:/var/www/my_site
+{% endhighlight %}
 
 Wenn das git-Repository sowieso schon auf dem Webserver liegt, ist
 es am einfachsten, die Seite mit einem *post-receive hook* bei einem *commit*
