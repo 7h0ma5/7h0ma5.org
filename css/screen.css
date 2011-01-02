@@ -1,4 +1,4 @@
-/* 
+/*
  * ================== General ==================
  */
 
@@ -52,14 +52,14 @@ pre code {
   display: none;
 }
 
-/* 
+/*
  * ================== Header ==================
  */
 
 header {
   display: block;
   margin-bottom: 5px;
-  padding: 5px 10px;    
+  padding: 5px 10px;
   border-bottom: 1px solid #ccc;
   line-height: 30px;
 }
@@ -107,7 +107,7 @@ h1#site-title {
   color: #888;
 }
 
-/* 
+/*
  * ================== Main Blocks ==================
  */
 
@@ -133,10 +133,18 @@ h1#site-title {
   font-size: 1.1em;
 }
 
-/* 
+/*
  * ================== Content ==================
  */
 
+ul.postlist {
+  margin-left: 0 ! important;
+  list-style: none;
+}
+
+.postlist span {
+  color: #aaa;
+}
 
 .post h2 {
   font-size: 2em;
@@ -161,11 +169,6 @@ h1#site-title {
   margin: 1em 0;
   margin-bottom: 20px;
   border-bottom: 1px dotted #ddd;
-}
-
-.post.overview .content {
-  margin-bottom: 0;
-  border-bottom: 0;
 }
 
 .post .content h3 {
@@ -194,7 +197,7 @@ h1#site-title {
   margin-bottom: 20px;
 }
 
-/* 
+/*
  * ================== Comments ==================
  */
 
@@ -213,62 +216,7 @@ h1#site-title {
   display: none ! important;
 }
 
-/* 
- * ================== Sidebar ==================
- */
-
-#sidebar .widget {
-  margin: 15px 0;
-}
-
-#sidebar .widget > h2 {
-  font-weight: 200;
-  color:  #555;
-  border-bottom: 1px solid #ddd;
-  margin: 0 -15px 15px -15px;
-  padding: 2px 10px;
-  background-color: #fcfcfc;
-}
-
-#sidebar .widget ul {
-  margin: 0 0 0 15px;
-}
-
-.meta {
-  display: block;
-  margin: 10px 0;
-  font-size: 0.9em;
-  color: #666;
-}
-
-.meta .row {
-  line-height: 1.4em;
-}
-
-.meta .label {
-  float: left;
-  width: 105px;
-  margin-right: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.meta .value {
-  font-size: 1.1em;
-  float: left;
-  word-wrap:break-word;
-}
-.post-social .facebook {
-  padding-right: 5px;
-  padding-top: 1px;
-  float: left;
-}
-
-.post-social .twitter {
-  float: left;
-}
-
-/* 
+/*
  * ================== Footer ==================
  */
 
