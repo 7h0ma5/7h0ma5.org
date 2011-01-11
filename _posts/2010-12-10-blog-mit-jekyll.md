@@ -18,8 +18,8 @@ Jekyll ist kein CMS, sondern ein *Static-Site-Generator*,
 denn Jekyll spuckt einfach nur statisches HTML aus. Das
 hört sich jetzt vielleicht nach einer längst überholten
 Technik an, doch kombiniert mit Git, Markdown bzw. Textile
-und Liquid (einer Template-Engine) hat man schon ein sehr
-flexiebles System, was vor allem schnell und sicher ist.
+und Liquid (einer Template-Engine) hat man ein sehr
+flexibles System, was vor allem schnell und sicher ist.
 
 Das die generierten Seiten statisch sind, bringt natürlich
 auch Nachteile mit sich, denn man muss auf eingebaute
