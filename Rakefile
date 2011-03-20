@@ -40,8 +40,16 @@ END
 
   system("emacs", file)
 
-  system("git", "ci -a -m \"adds new post '#{title}'\"")
-  system("git", "push origin master")
+  STDOUT.write "Commit? [y/n]: "
+  commit = STDIN.gets.chop!
+  if commit == "y"
+    system("git", "ci -a -m \"adds new post '#{title}'\"")
+    system("git", "push origin master")
+  end
 
-  Rake::Task["deploy"].invoke
+  STDOUT.write "Deploy? [y/n]: "
+  dep = STDIN.gets.chop!
+  if dep == "y"
+    Rake::Task["deploy"].invoke
+  end
 end
