@@ -2,6 +2,8 @@
 layout: post
 title: Super-Mond
 date: 2011-03-20 14:30:02
+categories:
+- astronomy
 ---
 
 Gestern kam der Mond der Erde mit 356.580 km Entfernung
