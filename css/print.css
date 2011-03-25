@@ -1,4 +1,4 @@
-body { 
+body {
   font: normal normal 400 13px/1.2 Arial, Helvetica, FreeSans, sans-serif;
 }
 
@@ -7,7 +7,7 @@ footer { border-top: 1px solid #ddd; padding: 10px 0; }
 
 pre code {
   font-size: 0.9em;
-  font: Inconsolata, monospace;
+  font-family: Inconsolata, monospace;
   padding: 7px 5px;
   margin: 1em 0;
   border: 1px solid #000;
