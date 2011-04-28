@@ -13,6 +13,7 @@ title: Blogroll
 - [larssteffens.de](http://www.larssteffens.de)
 - [Nerdcore](http://www.nerdcore.de/)
 - [netzpolitik.org](http://netzpolitik.org/)
+- [repat](http://repat.de)
 - [UARRR](http://www.uarrr.org/)
 - [virtualpixel](http://www.virtualpixel.de/)
 - [Willi's Blog](http://willisblog.de/)
