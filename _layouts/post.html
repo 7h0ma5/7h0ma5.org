@@ -4,7 +4,7 @@ layout: default
 <article class="post">
   <h2 class="title">{{page.title}}</h2>
   <div class="meta">
-    {{page.date | date: "%d. %B %Y %H:%M"}}
+    <time pubdate="{{page.date | date: "%Y-%m-%d"}}">{{page.date | date: "%d. %B %Y"}}</time>
   </div>
   <div class="content">
     {{content}}
