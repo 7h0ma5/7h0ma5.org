@@ -8,7 +8,7 @@ task :build do
 end
 
 task :default do
-  jekyll "--server --auto"
+  jekyll "--server --auto --future"
 end
 
 task :deploy => :build do
