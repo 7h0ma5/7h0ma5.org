@@ -1,6 +1,18 @@
+def sass
+  sh "rm -rf css"
+  sh "mkdir -p css"
+  sh "pygmentize -S colorful -f html | sass-convert -F css -T scss > _sass/_pygments.scss"
+  sh "sass -t compressed _sass/style.scss css/style.css"
+end
+
 def jekyll(opts="")
   sh "rm -rf _site"
+  sass
   sh "jekyll " + opts
+end
+
+task :sass do
+  sass
 end
 
 task :build do

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     {% if page.title %}<title>{{page.title}} &ndash; 7h0ma5.org</title>{% else %}<title>7h0ma5.org</title>{% endif %}
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/7h0ma5" />
+    <link rel="alternate" type="application/atom+xml" title="7h0ma5.org Atom Feed" href="/atom.xml" />
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <meta name="viewport" content="width=device-width,maximum-scale=1.0" />
@@ -11,7 +11,7 @@
   <body>
   <div id="wrapper">
     <header>
-      <h1 id="site-title">
+      <h1>
         <a href="/">7h0ma5.org</a>
       </h1>
       <nav>
@@ -23,30 +23,20 @@
       </nav>
       <div class="clear"></div>
     </header>
-    <div id="main">
-      <section id="content">
-        {{content}}
-      </section>
-    </div>
-      <footer>
-        <div id="copyright" style="float: left;">
-          &#xa9; Thomas Gatzweiler
-        </div>
-        <div style="float: right;">
-          <div class="site-html5">
-            <a href="http://validator.w3.org/check?uri=http://7h0ma5.org/">
-              <img src="/images/html5.png" alt="" width="88" height="31" />
-            </a>
-          </div>
-          <div class="site-license">
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
-              <img src="/images/cc.png" alt="Lizenz: CC-BY-SA" width="88" height="31" />
-            </a>
-          </div>
-        </div>
-        <div class="clear"></div>
-      </footer>
-    </div>
+    <section id="content">
+      {{content}}
+    </section>
+    <footer>
+      <div id="copyright">
+        &#xa9; Thomas Gatzweiler
+      </div>
+      <div id="links">
+        <a href="http://validator.w3.org/check?uri=http://7h0ma5.org/">HTML5</a>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>
+        <a href="/atom.xml">Atom</a>
+      </div>
+      <div class="clear"></div>
+    </footer>
     <!-- Piwik -->
     <script type="text/javascript">
       var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.t0g.de/" : "http://stats.t0g.de/");
