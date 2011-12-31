@@ -2,8 +2,8 @@
 title: Mutt mit Gmail und IMAP
 layout: post
 date: 2010-12-18 15:00:00
-categories:
-- software
+category: software
+tags: [mutt, configuration, gmail, google, mail]
 ---
 
 Google Mail hat zwar ein sehr gutes Webinterface, doch einen
@@ -59,11 +59,11 @@ habe ich noch folgende Einstellungen gesetzt:
     set imap_keepalive = 900
     set timeout=15
     set mail_check=60
-    
+
     set sort = 'threads'
     set sort_aux = 'last-date-received'
     set charset="utf-8"
-    
+
     set delete = yes
     set move = no
 

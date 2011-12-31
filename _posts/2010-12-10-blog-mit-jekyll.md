@@ -2,8 +2,8 @@
 title: Blog mit Jekyll
 layout: post
 date: 2010-12-10 22:00:00
-categories:
-- blog
+category: blog
+tags: [blog, engine, cms, jekyll]
 ---
 
 3 Jahre lang lief dieses Blog mit Wordpress,

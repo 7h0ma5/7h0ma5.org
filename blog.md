@@ -1,6 +1,6 @@
 ---
-title: Home
-layout: default
+layout: page
+title: Blog
 ---
 <ul class="postlist">
 {% for post in site.posts %}

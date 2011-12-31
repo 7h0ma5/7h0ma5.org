@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Thomas Gatzweiler" />
+    <meta name="language" content="de" />
+    {% if page.tags %}<meta name="tags" content="{{page.tags|join:","}}" />{% endif %}
+    {% if page.category %}<meta name="category" content="{{page.category}}" />{% endif %}
+    {% if page.date %}<meta name="modified" content="{{page.date|date_to_xmlschema}}" />{% endif %}
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0">
     {% if page.title %}<title>{{page.title}} &ndash; 7h0ma5.org</title>{% else %}<title>7h0ma5.org</title>{% endif %}
     <link rel="alternate" type="application/atom+xml" title="7h0ma5.org Atom Feed" href="/atom.xml" />
+    <link rel="canonical" href="{{site.url}}{{page.url}}" />
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+    {% if page.previous.url %}<link rel="prev" content="{{page.previous.url}}" />{% endif %}
+    {% if page.next.url %}<link rel="next" content="{{page.next.url}}" />{% endif %}
   </head>
   <body>
-  <div id="wrapper">
-    <header>
-      <h1>
-        <a href="/">7h0ma5.org</a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="http://thomasgatzweiler.com">Kontakt</a></li>
-          <li><a href="/blogroll.html">Blogroll</a></li>
-        </ul>
-      </nav>
-      <div class="clear"></div>
-    </header>
-    <section id="content">
-      {{content}}
-    </section>
-    <footer>
-      <div id="copyright">
-        &#xa9; Thomas Gatzweiler
-      </div>
-      <div id="links">
-        <a href="http://validator.w3.org/check?uri=http://7h0ma5.org/">HTML5</a>
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>
-        <a href="/atom.xml">Atom</a>
-      </div>
-      <div class="clear"></div>
-    </footer>
+    <div id="wrapper">
+      <header>
+        <h1>
+          <a href="/">7h0ma5.org</a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/blogroll.html">Blogroll</a></li>
+            <li><a href="http://thomasgatzweiler.com">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </header>
+      <section id="content">
+        {{content}}
+      </section>
+      <footer>
+        <div id="copyright">
+          &#xa9; Thomas Gatzweiler
+        </div>
+        <div id="links">
+          <a href="http://validator.w3.org/check?uri=http://7h0ma5.org/">HTML5</a>
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>
+          <a href="/atom.xml">Atom</a>
+        </div>
+        <div class="clear"></div>
+      </footer>
+    </div>
     <!-- Piwik -->
     <script type="text/javascript">
       var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.t0g.de/" : "http://stats.t0g.de/");

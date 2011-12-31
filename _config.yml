@@ -10,14 +10,11 @@ plugins: ./_plugins
 exclude: Rakefile
 
 pygments: true
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
 lsi: false
 future: false
 markdown: maruku
 
 maruku:
-  use_tex: true
+  use_tex: false
   use_divs: false
-  png_engine: blahtex
-  png_dir: images/latex
-  png_url: /images/latex
