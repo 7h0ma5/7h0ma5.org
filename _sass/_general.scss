@@ -42,6 +42,45 @@ pre code {
     }
 }
 
+a {
+    color: #0000ff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    #content &:visited {
+        color: #0000aa;
+    }
+}
+
 .clear {
     clear: both;
+}
+
+.footnotes {
+    font-size: 0.8em;
+
+    li {
+        font-weight: bold;
+    }
+
+    p {
+        font-weight: normal;
+        display: inline;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #555;
+        width: 30%;
+    }
+}
+
+sup {
+    a[rel=footnote] {
+        font-size: 0.8em;
+    }
 }
