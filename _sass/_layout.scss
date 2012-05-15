@@ -45,8 +45,7 @@ header {
 }
 
 #content {
-    padding: 1.3em 40px;
-    width: 600px;
+    padding: 20px 40px;
     color: #333;
 }
 
@@ -66,9 +65,8 @@ footer {
             margin-left: 0;
         }
         a {
-            display: block;
+            display: inline-block;
             color: #fff;
-            float: left;
             margin-left: 15px;
         }
     }

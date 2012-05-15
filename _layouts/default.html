@@ -6,7 +6,7 @@
     {% if page.tags %}<meta name="keywords" content="{{page.tags|join:","}}" />{% endif %}
     {% if page.category %}<meta name="category" content="{{page.category}}" />{% endif %}
     {% if page.date %}<meta name="modified" content="{{page.date|date_to_xmlschema}}" />{% endif %}
-    <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     {% if page.title %}<title>{{page.title}} &ndash; 7h0ma5.org</title>{% else %}<title>7h0ma5.org</title>{% endif %}
     <link rel="alternate" type="application/atom+xml" title="7h0ma5.org Atom Feed" href="/atom.xml" />
     <link rel="canonical" href="{{site.url}}{{page.url}}" />
@@ -14,6 +14,28 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     {% if page.previous.url %}<link rel="prev" content="{{page.previous.url}}" />{% endif %}
     {% if page.next.url %}<link rel="next" content="{{page.next.url}}" />{% endif %}
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      (function(){
+      var u=(("https:" == document.location.protocol) ? "https://stats.t0g.de/" : "http://stats.t0g.de/");
+      _paq.push(['setSiteId', 1]);
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s); })();
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-375887-20']);
+      _gaq.push(['_setDomainName', '7h0ma5.org']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <div id="wrapper">
@@ -47,17 +69,5 @@
         <div class="clear"></div>
       </footer>
     </div>
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.t0g.de/" : "http://stats.t0g.de/");
-      document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type="text/javascript">
-      try {
-        var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-        piwikTracker.trackPageView();
-        piwikTracker.enableLinkTracking();
-      } catch(err) {}
-    </script><noscript><img src="http://stats.t0g.de/piwik.php?idsite=1" style="border:0" alt="" /></noscript>
-    <!-- End Piwik Tag -->
   </body>
 </html>

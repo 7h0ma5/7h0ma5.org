@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        -webkit-text-size-adjust:none;
+    }
+    header {
+        padding: 10px;
+        text-align: center;
+        background-color: #222;
+
+        h1 { font-size: 1.4em; float: none }
+        a { color: #fff ! important; }
+        nav { clear: both; float: none; }
+    }
+    #content {
+        font-size: 0.8em;
+        padding: 10px;
+
+        img { max-width: 100%; }
+    }
+    #wrapper {
+        width: 100%;
+    }
+    footer {
+        padding: 10px;
+        text-align: center;
+        #copyright { float: none; }
+        #links {
+            float: none;
+            padding-top: 10px;
+        }
+    }
+}
