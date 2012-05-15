@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="author" content="Thomas Gatzweiler" />
-    {% if page.tags %}<meta name="keywords" content="{{page.tags|join:","}}" />{% endif %}
-    {% if page.category %}<meta name="category" content="{{page.category}}" />{% endif %}
-    {% if page.date %}<meta name="modified" content="{{page.date|date_to_xmlschema}}" />{% endif %}
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     {% if page.title %}<title>{{page.title}} &ndash; 7h0ma5.org</title>{% else %}<title>7h0ma5.org</title>{% endif %}
     <link rel="alternate" type="application/atom+xml" title="7h0ma5.org Atom Feed" href="/atom.xml" />
     <link rel="canonical" href="{{site.url}}{{page.url}}" />
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    {% if page.previous.url %}<link rel="prev" content="{{page.previous.url}}" />{% endif %}
-    {% if page.next.url %}<link rel="next" content="{{page.next.url}}" />{% endif %}
+    {{page|page_meta}}
+
     <script type="text/javascript">
       var _paq = _paq || [];
       (function(){

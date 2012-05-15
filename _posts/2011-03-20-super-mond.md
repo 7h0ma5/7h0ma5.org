@@ -4,6 +4,7 @@ title: Super-Mond
 date: 2011-03-20 14:30:02
 category: astronomie
 tags: [mond, supermond, flugzeug]
+image: http://data.7h0ma5.org/images/astronomy/supermoon_600.jpg
 ---
 
 Gestern kam der Mond der Erde mit 356.580 km Entfernung
