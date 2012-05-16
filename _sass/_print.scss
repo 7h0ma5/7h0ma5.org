@@ -1,0 +1,14 @@
+@media print {
+    h1 {
+        text-algin: right;
+    }
+    nav {
+        display: none;
+    }
+    #comments {
+        display: none;
+    }
+    #links {
+        display: none;
+    }
+}
