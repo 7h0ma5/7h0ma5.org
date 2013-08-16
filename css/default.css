@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:700,400italic,400|Merriweather+Sans:700);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pure-button-small {
+    font-size: 85%;
+}
+
+#layout {
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 14em;
+    margin-left: -16em;
+    color: #444;
+    border-right: 1px solid #ddd;
+}
+
+header {
+    margin: 5em 2em 0;
+    text-align: right;
+}
+
+.brand-title {
+    margin-bottom: 1em;
+}
+.brand-title {
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav a {
+    display: inline-block;
+    color: #444 ! important;
+    margin-top: 0.5em;
+    padding: 5px 0;
+}
+nav a:hover,
+nav a:focus {
+    text-decoration: none;
+}
+
+.content {
+    font-family: Crimson Text, serif;
+    color: #444;
+    margin: 2em 0;
+}
+
+.content a {
+    color: #00e;
+}
+.content a:hover,
+.content a:focus {
+    color: #06e;
+    text-decoration: underline;
+}
+.content a:visited {
+    color: #551a8b;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    font-family: "Merriweather Sans", Helvetica, sans-serif;
+    color: #222;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 80%;
+}
+
+footer a {
+    color: #ccc;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        border: none;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .header {
+        text-align: center;
+        top: auto;
+        margin: 3em auto;
+        position: static;
+    }
+
+    #layout {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 2em 1em 0;
+    }
+}

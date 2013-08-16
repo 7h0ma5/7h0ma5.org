@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alternativen zu Google
-date: 2012-01-30 15:00:00
+published: 2012-01-30T14:00:00Z
 category: internet
 tags: [google,alternativen,suche,email,gmail,kalender,kontakte,analytics]
 ---
@@ -9,7 +9,7 @@ tags: [google,alternativen,suche,email,gmail,kalender,kontakte,analytics]
 Google hat sich seit seiner Gründung 1998 von einer einfachen
 Suchmaschine zu einem Anbieter von vielen verschiedenen Diensten
 entwickelt. Diese Dienste sind bis jetzt zwar alle kostenlos, doch das
-kann sich jedoch jederzeit ändern. Google finanziert sich durch die
+kann sich jederzeit ändern. Google finanziert sich durch die
 Anzeige von personalisierter Werbung, bei der Suche personalisiert
 durch die Suchbegriffe, bei Google Mail sogar durch den Inhalt der
 E-Mails. Mit Googles neuen Nutzungsbedingungen will Google diese Daten
@@ -63,11 +63,12 @@ Kontrolle über den E-Mail-Verkehr bringt das Aufsetzen eines eigenen
 Mailservers. Das hört sich ziemlich aufwendig an, ist aber gar nicht
 so schwer. Man benötigt eine Domain und einen Computer, der dauerhaft
 mit dem Internet verbunden ist und vorzugsweise eine feste IP-Adresse
-hat. Mit dem [Postfix][pf]-MTA und dem IMAP-Server [Dovecot][dc] ist
-ein funktionierendes Setup relativ schnell eingerichtet. Ein
-Webinterface, das so gut zu bedienen ist wie das von GMail, habe ich
-bis jetzt noch nicht gefunden, die derzeit beste Alternative ist
-meiner Meinung nach [Roundcube][rc].
+hat. Mit dem [Postfix][pf]-<abbr title="Mail Transfer
+Agent">MTA</abbr> und dem IMAP-Server [Dovecot][dc] ist ein
+funktionierendes Setup relativ schnell eingerichtet. Ein Webinterface,
+das so gut zu bedienen ist wie das von GMail, habe ich bis jetzt noch
+nicht gefunden, die derzeit beste Alternative ist meiner Meinung nach
+[Roundcube][rc].
 
 ### Kalender
 
@@ -105,9 +106,10 @@ die kostenlosen Dienste von Google verlassen sollte.
 Google Analytics ermöglicht Google sogar eine Überwachung der Benutzer
 außerhalb ihrer eigenen Webseiten, da bei jedem Seitenaufruf einer
 Seite mit Google Analytics auch eine Anfrage an Google gesendet
-wird. Hier benutze ich die GPL-lizenzierte Software [Piwik][piwik],
-die man auf dem eigenen Server betreiben kann und so keine Daten an
-andere Dienste geben muss.
+wird. Hier benutze ich die <abbr title="GNU General Public
+License">GPL</abbr>-lizenzierte Software [Piwik][piwik], die man auf
+dem eigenen Server betreiben kann und so keine Daten an andere Dienste
+geben muss.
 
 [ddg]: http://www.duckduckgo.com
 [yacy]: http://www.yacy.net
@@ -121,8 +123,3 @@ andere Dienste geben muss.
 
 [^google-nutzungsbedingungen]: [**heise online** &ndash; Google bildet diensteübergreifende Benutzerprofile](http://www.heise.de/newsticker/meldung/Google-bildet-diensteuebergreifende-Benutzerprofile-1421163.html)
 [^gmaps-kostenpflichtig]: [**heise iX** &ndash; Schluss mit Gratis: Google verlangt Geld für Kartennutzung](http://www.heise.de/ix/meldung/Schluss-mit-gratis-Google-verlangt-Geld-fuer-Kartennutzung-1368176.html)
-
-*[MTA]: Mail Transfer Agent
-*[LDAP]: Lightweight Directory Access Protocol
-*[GPL]: GNU General Public License
-*[IMAP]: Internet Message Access Protocol

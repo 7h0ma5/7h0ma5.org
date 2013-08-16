@@ -3,9 +3,12 @@ layout: page
 title: Impressum
 ---
 
-![Impressum](/images/impressum.png)
+# Impressum
 
-### Haftungsausschluss:
+![Impressum](/images/impressum.png)\
+
+
+### Haftungsausschluss
 
 #### Haftung für Inhalte
 

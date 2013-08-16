@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Super-Mond
-date: 2011-03-20 14:30:02
-category: astronomie
+date: 2011-03-20T13:30:00Z
+category: astronomy
 tags: [mond, supermond, flugzeug]
 image: http://data.7h0ma5.org/images/astronomy/supermoon_600.jpg
 ---

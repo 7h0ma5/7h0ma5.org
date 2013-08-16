@@ -1,7 +1,7 @@
 ---
 title: Blog mit Jekyll
 layout: post
-date: 2010-12-10 22:00:00
+date: 2010-12-10T22:00:00Z
 category: blog
 tags: [blog, engine, cms, jekyll]
 ---
@@ -31,9 +31,9 @@ Beispiel [Disqus](http://www.disqus.com) für die Kommentare.
 Da Jekyll auf Ruby basiert, ist die Installation sehr einfach,
 soweit man Ruby und RubyGems bereits installiert hat.
 
-{% highlight bash %}
+``` bash
 $ gem install jekyll
-{% endhighlight %}
+```
 
 ### Konfiguration
 Ein Blog mit Jekyll ist einfach nur ein Verzeichnis mit dieser
@@ -79,7 +79,7 @@ mit dem eigentlichen Inhalt gefüllt wird.
 
 Ein Template sieht zum Beispiel so aus:
 
-{% highlight html+django %}
+``` html
 <!DOCTYPE html>
 <html>
   <head>
@@ -90,7 +90,7 @@ Ein Template sieht zum Beispiel so aus:
       {{"{{content"}}}}
     </body>
 </html>
-{% endhighlight %}
+```
 
 ### Deployment
 Um den Mix aus Templates und Markdown in eine statische HTML-Seite
@@ -101,9 +101,9 @@ Webserver hochgeladen werden, wofür es mehrere Möglichkeiten gibt.
 
 Eine Möglichkeit ist rsync:
 
-{% highlight bash %}
+``` bash
 $ jekyll && rsync -avz --delete _site/ user@host:/var/www/my_site
-{% endhighlight %}
+```
 
 Wenn das git-Repository sowieso schon auf dem Webserver liegt, ist
 es am einfachsten, die Seite mit einem *post-receive hook* bei einem *commit*
@@ -114,7 +114,5 @@ zu finden.
 Weitere Informationen gibt es im [Wiki](https://github.com/mojombo/jekyll/wiki)
 des [GitHub-Projektes](https://github.com/mojombo/jekyll/wiki) von Jekyll.
 
-Der "Source-Code" meines Blogs liegt [hier](https://github.com/7h0ma5/7h0ma5.org).
-
-*[HTML]: Hypertext Markup Language
-*[CMS]: Content Management System
+Den Quellcode meines Blogs findet man ebenfalls auf
+[GitHub](https://github.com/7h0ma5/7h0ma5.org).
