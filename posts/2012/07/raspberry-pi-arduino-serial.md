@@ -17,13 +17,13 @@ had to use a voltage divider:
 
 ![](http://data.7h0ma5.org/images/tech/rbpi-arduino.png)
 
-If you are in the posession of an Arduino Mega, you can connect the
-serial port of the Raspberry Pi via the Arduino with your Ccomputer
-without a special connector. The Raspberry Pi is connected with on
+If you have an Arduino Mega, you can establish a serial connection
+from your computer to the Raspberry Pi over the Arduino without
+needing a special connector. The Raspberry Pi is connected with on
 third serial port of the Ardunino Mega and the Arduino Mega is
-connected via USB to your computer. The following program lets the
+connected via USB to the computer. The following program lets the
 Arduino forward all serial packets to either the Raspberry Pi or the
-Computer:
+computer:
 
 ``` cpp
 void setup() {

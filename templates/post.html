@@ -22,12 +22,17 @@ $body$
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     };
 
-    if (!navigator.doNotTrack) {
-      disqus_load();
+    if (navigator.doNotTrack == "yes" || navigator.doNotTrack == "1") {
+      button = '<a class="pure-button pure-button-small"
+                   style="display: inline-block; margin: 0 auto;"
+                   href="#disqus_thread"
+                   title="comments are not loaded because do-not-track is activated in your browser"
+                   onclick="disqus_load();">Load Disqus Comments</a>';
+
+      document.getElementById("disqus_thread").innerHTML = button;
     }
     else {
-      button = '<a class="pure-button pure-button-small" style="display: inline-block;" href="#disqus_thread" onclick="disqus_load();">Load Disqus Comments</a>';
-      document.getElementById("disqus_thread").innerHTML = button;
+      disqus_load();
     }
   </script>
 </div>

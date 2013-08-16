@@ -3,7 +3,7 @@ import Data.Monoid (mappend)
 import Hakyll
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match ("js/*" .||. "images/*" .||. "robots.txt") $ do
         route idRoute
         compile copyFileCompiler
@@ -82,4 +82,9 @@ feedConfiguration = FeedConfiguration
     , feedAuthorName  = "Thomas Gatzweiler"
     , feedAuthorEmail = ""
     , feedRoot        = "http://www.7h0ma5.org"
+    }
+
+config :: Configuration
+config = defaultConfiguration
+    { deployCommand = "rsync -rtz --delete _site/ root@t0g.de:/var/www/vhosts/7h0ma5.org/"
     }

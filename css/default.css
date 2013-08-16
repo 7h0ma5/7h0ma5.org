@@ -31,14 +31,13 @@ a {
 }
 
 header {
-    margin: 5em 2em 0;
+    margin: 5em 2em;
     text-align: right;
 }
 
 .brand-title {
+    color: #222;
     margin-bottom: 1em;
-}
-.brand-title {
     font-weight: 100;
     letter-spacing: -2px;
 }
@@ -50,31 +49,34 @@ nav ul {
 }
 nav a {
     display: inline-block;
-    color: #444 ! important;
+    color: #444;
     margin-top: 0.5em;
-    padding: 5px 0;
+    padding: 5px 2em;
+    margin-right: -2em;
+    transition: color 0.2s ease-in;
 }
 nav a:hover,
 nav a:focus {
     text-decoration: none;
+    color: #ffa54f;
 }
 
 .content {
-    font-family: Crimson Text, serif;
-    color: #444;
     margin: 2em 0;
+    font-weight: normal;
+    font-smooth: always;
+    color: #444;
+    font-family: "Crimson Text", serif;
 }
 
 .content a {
-    color: #00e;
+    color: #2980b9;
+    transition: color 0.2s;
 }
 .content a:hover,
 .content a:focus {
-    color: #06e;
+    color: #5cacee;
     text-decoration: underline;
-}
-.content a:visited {
-    color: #551a8b;
 }
 
 .content h1,
@@ -87,7 +89,21 @@ nav a:focus {
 
 hr {
     border: none;
-    border-top: 1px solid #ddd;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.footnotes ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.footnotes li p {
+    display: inline;
+}
+
+.footnotes li:target {
+    background-color: #fff68f;
 }
 
 footer {
@@ -100,13 +116,14 @@ footer a {
     color: #ccc;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1100px) {
     .sidebar {
         width: 100%;
         position: relative;
         margin: 0;
         border: none;
     }
+
     nav ul li {
         display: inline-block;
         margin: 0 10px;
@@ -115,17 +132,17 @@ footer a {
     .header {
         text-align: center;
         top: auto;
-        margin: 3em auto;
+        margin: 0 auto;
         position: static;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .content {
+        margin: 1em;
     }
 
     #layout {
         padding: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .wrapper {
-        padding: 2em 1em 0;
     }
 }

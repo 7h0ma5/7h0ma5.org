@@ -39,13 +39,15 @@ $ gem install jekyll
 Ein Blog mit Jekyll ist einfach nur ein Verzeichnis mit dieser
 Struktur:
 
-    _config.yml
-    _layouts/
-       default.html
-       post.html
-    _posts/
-       2010-12-01-test-post.md
-    index.html
+```
+_config.yml
+_layouts/
+   default.html
+   post.html
+_posts/
+   2010-12-01-test-post.md
+index.html
+```
 
 Die config.yml-Datei enthält die Einstellungen, der
 \_layouts-Ordner die Templates und der \_posts-Ordner
@@ -65,11 +67,13 @@ mit [YAML](http://www.yaml.org/) formatiert ist.
 
 Ein Post sieht dann zum Beispiel so aus:
 
-    ---
-    layout: post
-    title: Test Post
-    ---
-    Text, der mit *Markdown* formatiert ist.
+``` markdown
+---
+layout: post
+title: Test Post
+---
+Text, der mit *Markdown* formatiert ist.
+```
 
 Die layout-Variable gibt an, welches Template aus dem
 \_layouts-Ordner für diesen Beitrag verwendet werden soll.
@@ -83,12 +87,12 @@ Ein Template sieht zum Beispiel so aus:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{"{{page.title"}}}}</title>
+    <title>{{page.title}}</title>
   </head>
   <body>
-    <h1>{{"{{page.title"}}}}</h1>
-      {{"{{content"}}}}
-    </body>
+    <h1>{{page.title}}</h1>
+    {{content}}
+  </body>
 </html>
 ```
 
@@ -99,14 +103,14 @@ und `jekyll` ausführen. Die generierte Seite befindet sich nun im
 automatisch angelegten \_site-Verzeichnis und kann jetzt auf einen
 Webserver hochgeladen werden, wofür es mehrere Möglichkeiten gibt.
 
-Eine Möglichkeit ist rsync:
+Eine Möglichkeit ist `rsync`:
 
 ``` bash
 $ jekyll && rsync -avz --delete _site/ user@host:/var/www/my_site
 ```
 
 Wenn das git-Repository sowieso schon auf dem Webserver liegt, ist
-es am einfachsten, die Seite mit einem *post-receive hook* bei einem *commit*
+es am einfachsten, die Seite mit einem *post-receive hook* bei einem commit
 automatisch neu generieren zu lassen. Wie das genau funktioniert und noch ein
 paar andere Möglichkeiten sind [hier](https://github.com/mojombo/jekyll/wiki/Deployment)
 zu finden.
