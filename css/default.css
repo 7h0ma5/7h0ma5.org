@@ -79,12 +79,29 @@ nav a:focus {
     text-decoration: underline;
 }
 
+.content p,
+.content ul,
+.content ol {
+    font-size: 1.1em;
+}
+
 .content h1,
 .content h2,
 .content h3,
 .content h4 {
     font-family: "Merriweather Sans", Helvetica, sans-serif;
     color: #222;
+}
+
+code {
+    font-family: Inconsolata, monospace;
+    font-size: 0.95em;
+}
+
+pre {
+    padding: 1em;
+    background-color: #efefef;
+    border-radius: 2px;
 }
 
 hr {

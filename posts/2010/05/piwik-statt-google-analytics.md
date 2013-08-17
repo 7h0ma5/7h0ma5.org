@@ -5,7 +5,7 @@ tags: web, analytics, google, piwik
 ---
 
 Seit mehr als zwei Jahren habe ich [Google Analytics][ga] zur Erstellung von
-Besucherstatistiken benutzt. Google Analytics bietet natürlich viele
+Besucher­statistiken benutzt. Google Analytics bietet natürlich viele
 Vorteile, zum Beispiel muss man es nicht selbst hosten und hat somit
 am wenigesten Arbeit damit. Doch es besteht ein gravierender Nachteil:
 Man gibt alle Statistiken direkt an Google weiter. Es ist nicht
